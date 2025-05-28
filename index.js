@@ -6,9 +6,7 @@ const app = express();
 const PORT = 5666;
 
 // Enable CORS for all origins (or restrict to your frontend URL)
-app.use(cors({
-  origin: 'http://localhost:3000'  // Allow only your React frontend
-}));
+app.use(cors());
 
 app.use(express.json());
 app.use('/api', friendsRouter);
