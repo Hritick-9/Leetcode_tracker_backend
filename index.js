@@ -11,9 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/api', friendsRouter);
 
-app.get('/', (req, res) => {
-  res.send('Welcome to the LeetCode Submissions API');
-});
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

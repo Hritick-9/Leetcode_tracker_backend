@@ -24,7 +24,7 @@ async function getRecentSubmissions(username) {
   });
 
   const json = await response.json();
-  console.log("GraphQL response:", JSON.stringify(json, null, 2));
+
 
   if (json.errors) {
     throw new Error(json.errors[0].message);
